@@ -1,4 +1,4 @@
-/Dynamic Programming - novice example
+//Dynamic Programming - novice example
 
 #include <iostream>
 #include <memory>
