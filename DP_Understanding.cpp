@@ -33,6 +33,7 @@ long long fib(int n,map<long long,long long> &_m){
 }
 
 int main(int argc,char *argv[]){
+    //associative array to store calculated values
     map<long long,long long> _map;
     _map[0] = 0;
     _map[1] = 1;
