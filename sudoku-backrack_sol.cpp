@@ -130,8 +130,8 @@ queue<Board> next(Board &b){
                 for(int val = 1; val <= SIZE ; val++){
                     Board new_candidate = b;
                     new_candidate[i][j] = val;
-                    //if(reject(new_candidate))
-                    PossibleCandidates.push(new_candidate);
+                    if(reject(new_candidate))
+                        PossibleCandidates.push(new_candidate);
                 }
                 //if the code runs longer than expexted then
                 //put a return statement here
