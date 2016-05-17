@@ -158,7 +158,7 @@ queue<_mat> next(const _mat &a){
     return l;
 }
 
-//main backtrack function works recursively
+//backtrack function - finds all possible solutions and stores without one copy
 void Bt(_mat &root,unordered_set<_mat> &Uq_cp){
 
     if(!reject(root)) return;
