@@ -1,12 +1,15 @@
+/*
+Balanced 0-1 matrix using dynamic programming
+
+*/
 #include <iostream>
 #include <unordered_set>
 #include <queue>
 #include <algorithm>
 #include <functional>
-#define SIZE 6
+#define SIZE 4
 using namespace std;
 
-long long cnt = 0;
 
 struct _mat{
     bool Mat[SIZE][SIZE];
@@ -157,11 +160,13 @@ queue<_mat> next(const _mat &a){
 
 //main backtrack function works recursively
 void Bt(_mat &root,unordered_set<_mat> &Uq_cp){
-    cnt++;
+
     if(!reject(root)) return;
+
     if(accept(root)) Uq_cp.insert(root);
-    if(cnt >= 100000000) return;
+
     queue<_mat> candidates = next(root);
+
     while(!candidates.empty()){
         Bt(candidates.front(),Uq_cp);
         candidates.pop();
