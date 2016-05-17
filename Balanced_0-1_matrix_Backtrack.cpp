@@ -1,5 +1,5 @@
 /*
-Balanced 0-1 matrix using dynamic programming
+Balanced 0-1 matrix using Backtrack
 
 */
 #include <iostream>
